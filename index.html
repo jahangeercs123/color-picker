@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts style -->
+    <link rel="stylesheet" href="./css/fonts.css">
+    <!-- slick slider css -->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <title>Color Picker</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Take png or jpg File input from user-->
+<div class="container">
+	<div class="wrapper">
+		<div class="image-container">
+			<img id="image" src="https://images.unsplash.com/photo-1667318891415-3913e4ed0de9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+		</div>
+		<div class="btns-container">
+			<input type="file" id="file" accept="image/*" />
+			<label for="file"> Open A Photo </label>
+			<button id="pick-color">Pick Color</button>
+		</div>
+		<div id="error" class="hide"></div>
+		<div id="result" class="hide">
+			<div>
+				<input type="text" id="hex-val-ref" />
+				<button onclick="copy('hex-val-ref')">
+					<i class="fa-regular fa-copy"></i>
+				</button>
+			</div>
+			<div>
+				<input type="text" id="rgb-val-ref" />
+				<button onclick="copy('rgb-val-ref')">
+					<i class="fa-regular fa-copy"></i>
+				</button>
+			</div>
+			<div id="picked-color-ref"></div>
+		</div>
+		<div id="custom-alert">Color Code Copied</div>
+	</div>
+	<a href="https://www.linkedin.com/in/jahangeer-ahmad-9892b7243/" target="_blank">Contact Me&nbsp;<i class="fa-brands fa-linkedin"></i></a>
+</div>
+    </div>
+    <!-- .........header..... -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>
